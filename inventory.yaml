@@ -1,0 +1,7 @@
+# code: language=ansible
+
+# TODO: dynamically update inventory using awscli.
+
+rengine:
+  hosts:
+    rengine

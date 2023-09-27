@@ -1,0 +1,12 @@
+# code: language=ansible
+
+---
+- name: Set up rengine
+  hosts: rengine
+  roles:
+    - "rengine"
+  vars:
+    github_access_token: "UPDATEME"
+    rengine_username: "UPDATEME"
+    rengine_password: "UPDATEME"
+    root_domain: "UPDATEME"

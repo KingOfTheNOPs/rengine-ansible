@@ -1,0 +1,17 @@
+---
+# code: language=ansible
+- name: install dependencies
+  apt:
+    name:
+      - git
+    state: latest
+    update_cache: yes
+  become: yes
+  
+- name: Clone github repo 
+  ansible.builtin.git:
+    repo: https://{{ github_access_token }}@github.com/yogeshojha/rengine
+    dest: /home/kali/rengine
+
+  
+

@@ -1,0 +1,11 @@
+---
+# code: language=ansible
+
+# Include tasks
+
+- name: Clone github repo for rengine
+  ansible.builtin.include_tasks: "roles/rengine/tasks/github.yaml"
+
+- name: Install rengine
+  ansible.builtin.include_tasks: "roles/rengine/tasks/rengine.yaml"
+
